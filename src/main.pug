@@ -1,4 +1,4 @@
-include ../utils/mixins
+
 block variables
 
 doctype html
@@ -8,13 +8,10 @@ html(lang='en')
     title #{title}
     meta(name="description", content=description)
     block head
+      
 
   body(class=pageClass)
-    .wrapper
-      #app
-        include ../includes/modules/header
-        .content-wrapper
-          block content
-        include ../includes/modules/footer
+    include ./bundles/bundle
+    
 
     block script

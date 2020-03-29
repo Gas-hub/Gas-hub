@@ -1,0 +1,127 @@
+@import "assets/utils_scss/libs";
+@import "assets/utils_scss/vars";
+@import "assets/utils_scss/mixins";
+@import "assets/utils_scss/fonts";
+@import "assets/utils_scss/reset";
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section,
+.section {
+  position: relative;
+  padding: 40px 0;
+  @media screen and (max-width: $desktopWidth) {
+    padding: 36px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 28px 0;
+  }
+  @media screen and (max-width: $desktopWidth) {
+    padding: 20px 0;
+  }
+}
+
+.button {
+  display: inline-block;
+  width: 87px;
+  height: 34px;
+  padding-top: 2px;
+  text-align: center;
+  border: 2px solid $button-entry-color;
+  border-radius: 22px;
+  color: $button-entry-color;
+  &:hover{
+    transition: all .5s;
+    background-color: #7f58d3;
+    border: 2px solid #7f58d3;
+    color: #fff;
+  }
+}
+.button-signUp {
+  display: inline-block;
+  text-align: center;
+  width: 196px;
+  height: 34px;
+  padding-top: 2px;
+  border: 2px solid #bc9cff;
+  color: #fff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  &:hover{
+    transition: all .5s;
+    background: #fff;
+    border: 2px solid $button-entry-color;
+    color: $button-entry-color;
+  }
+}
+
+.container {
+  width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  max-width: $desktopWidth;
+  @media screen and (max-width: $smDesktopWidth) {
+    max-width: tableWidth;
+  }
+  @media screen and (max-width: $tableWidth) {
+    max-width: phoneWidth;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    max-width: smPhoneWidth;
+  }
+}
+
+// Modules
+@import "./bundles/bundle.scss";

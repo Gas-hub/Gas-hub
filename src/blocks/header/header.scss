@@ -1,0 +1,31 @@
+header{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    .header-wraper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    .header-menu{
+        display: flex;
+        li{
+            margin-left: 20px;
+        }
+        .header-menu__link{
+            display: inline-block;
+            padding-top: 3px;
+            transition: all .2s;
+            &:hover{
+                color: $button-entry-color;
+                border-bottom: 2px solid $button-entry-color;
+            }
+        }
+        img{
+            margin-left: 5px;
+        }
+    }
+}
