@@ -1,1 +1,25 @@
 section.content(style="background-image: url(assets/img/img_bg/content_bg.jpg);")
+    .container
+        .content-wrap
+            .content-form
+                form(action="" method = "post")
+                    .form__text  Найдём номера под ваши пожелания
+                    .fom-date
+                        .form-date__checkin
+                            label(for="") прибытие
+                            input(type='text' id="input-check-in" placeholder="ДД.ММ.ГГГГ")
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        .form-date__checkout
+                            label(for="") выезд
+                            input(type="text" id="input-check-out" placeholder="ДД.ММ.ГГГГ")
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    .form-date__visitors
+                        label(for="") гости
+                        input(type="text" placeholder="Сколько гостей")
+                    button.button-form попробовать номер 
+                        span.button__arrow
+                            img(src="assets/img/items/arrow_forward.svg", alt="")
+            include ./calendar/calendar.pug
+            .content-wraper-text
+                .content__text.
+                    Лучшие номера для вашей работы, отдыха и просто вдохновения
