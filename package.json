@@ -1,5 +1,5 @@
 {
-  "name": "webpacktemplate",
+  "name": "ui_kit",
   "version": "1.0.0",
   "description": "My template + pug",
   "main": "index.js",
@@ -54,7 +54,6 @@
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
   },
-  "dependencies": {
-  
-  }
+  "dependencies": {},
+  "homepage": "https://github.com/vedees/webpack-template-pug#readme"
 }

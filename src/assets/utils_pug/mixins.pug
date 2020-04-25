@@ -1,4 +1,12 @@
-mixin item(title, descr)
-  .item
-    h2.item-title= title
-    p.item-descr= descr
+//- Headers&Footers
+//- header
+mixin header-menu__item(title)
+  li: a(href="#" class="header-menu__link menu__link")= title
+mixin header-menu__item-active(title)
+  li: a(href="#" class="header-menu__link active")= title
+//- footer
+mixin footer-menu__item(title)
+  li: a(href="#" class="footer-menu__link menu__link")= title
+
+
+    
