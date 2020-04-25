@@ -19,6 +19,7 @@
   background-color: #fff;
   label {
     display: block;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
     margin-bottom: 5px;
@@ -126,4 +127,15 @@
   color: $text-color;
   
 }
-
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.form-data-buttons {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #bc9cff;
+}

@@ -14,8 +14,8 @@ class CALENDAR {
             nextMonth: this.getFirstElementInsideIdByClassName('calendar-change-year-slider-next'),
             inputCheckin: this.getElementByQuerySelector('#input-check-in'), 
             inputCheckout: this.getElementByQuerySelector('#input-check-out'),
-            formDataApply: this.getElementByQuerySelector('#form-data-apply'),
-            formDataClear: this.getElementByQuerySelector('#form-data-clear')
+            formDataApply: this.getElementByQuerySelector('#form-calendar-data-apply'),
+            formDataClear: this.getElementByQuerySelector('#form-calendar-data-clear')
             
         };
         
@@ -129,6 +129,10 @@ class CALENDAR {
             this.drawAll()
         });
         this.elements.inputCheckin.addEventListener('click', (e)=>{
+            this.elements.calendar.style = "display: block;"
+            
+        })
+        this.elements.inputCheckout.addEventListener('click', (e)=>{
             this.elements.calendar.style = "display: block;"
             
         })

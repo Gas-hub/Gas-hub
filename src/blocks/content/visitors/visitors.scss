@@ -1,0 +1,61 @@
+#visitors {
+  display: none;
+  max-width: 320px;
+  width: 100%;
+  padding: 7px 7px 13px 15px;
+  background: $default-color;
+  position: absolute;
+  top: 361px;
+  left: 50px;
+  z-index: 10;
+  border: 1px solid rgba(31,32,65,.25);
+  border-radius: 0 0 4px 4px ;
+
+}
+#visitors-adults,#visitors-children,#visitors-baby {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.adults,.children,.baby {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+.visitors-button-count {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  padding-top: 2px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: $link-color
+}
+.visitors-count {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-color;
+}
+#adults-button-minus,
+#children-button-minus,
+#baby-button-minus {
+  margin-right: 8px;
+}
+#adults-button-plus,
+#children-button-plus,
+#baby-button-plus {
+  line-height: 26px;
+  margin-left: 8px;
+}
+.visitors-buttons-wraper{
+    margin-top: 19px;
+}

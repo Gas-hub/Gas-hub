@@ -15,11 +15,12 @@ section.content(style="background-image: url(assets/img/img_bg/content_bg.jpg);"
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                     .form-date__visitors
                         label(for="") гости
-                        input(type="text" placeholder="Сколько гостей")
+                        input(type="text" id="input-visitors" placeholder="Сколько гостей")
                     button.button-form попробовать номер 
                         span.button__arrow
                             img(src="assets/img/items/arrow_forward.svg", alt="")
             include ./calendar/calendar.pug
+            include ./visitors/visitors.pug
             .content-wraper-text
                 .content__text.
                     Лучшие номера для вашей работы, отдыха и просто вдохновения

@@ -1,0 +1,20 @@
+#visitors   
+    div(id = "visitors-adults")
+        span.adults взрослые
+        span(class = " visitors-button-count" id = "adults-button-minus") -
+        span(class = " visitors-count" id = "adults-count") 0
+        span(class = " visitors-button-count" id = "adults-button-plus") +
+    div(id = "visitors-children")
+        span.children дети
+        span(class = " visitors-button-count" id="children-button-minus") -
+        span(class = " visitors-count" id="children-count") 0
+        span(class = " visitors-button-count" id="children-button-plus") +
+    div(id = "visitors-baby")
+        span.baby младенцы
+        span(class = " visitors-button-count" id="baby-button-minus") -
+        span(class = " visitors-count" id="baby-count") 0
+        span(class = " visitors-button-count" id="baby-button-plus") +
+    .visitors-buttons-wraper
+        .form-buttons
+            a(href="#" class="form-data-buttons" id="form-count-data-clear") очистить
+            a(href="#" class="form-data-buttons" id="form-count-data-apply") применить
