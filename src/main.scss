@@ -4,12 +4,13 @@
 @import "assets/utils_scss/fonts";
 @import "assets/utils_scss/reset";
 
+
+
 body {
   margin: 0;
   padding: 0;
-  background: #e5e5e5;
   font-family: $mainFont;
-  font-size: 14px;
+  font-size: $mainFontSize;
   font-weight: $mainFontWeight;
   color: $main-color;
   -webkit-font-smoothing: antialiased;
@@ -30,9 +31,7 @@ h5,
 h6 {
   margin: 0;
 }
-a.active {
-  color: rgba(31, 32, 65, 0.75);
-}
+
 a.menu__link {
   text-decoration: none;
   color: $link-color;
@@ -52,44 +51,37 @@ section,
 }
 
 .button {
-  width: 320px;
-  height: 44px;
-  left: 170px;
-  top: 450px;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 12px;
+  text-align: center;
+  border: 2px solid $button-entry-color;
+  border-radius: 22px;
+  color: $button-entry-color;
+  &:hover{
+    transition: all .5s;
+    border: 2px solid $main-color;
+    color:$main-color;
+  }
+}
+.button-signUp {
+  display: inline-block;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px 20px;
+  border: 2px solid #bc9cff;
+  color: #fff;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  &:hover {
-    transition: all 0.5s;
-    border: 2px solid $main-color;
-    color: $main-color;
-  }
-  .button__arrow {
-    position: absolute;
-    right: 50px;
+  &:hover{
+    transition: all .5s;
+    background: #fff;
+    border: 2px solid $button-entry-color;
+    color: $button-entry-color;
   }
 }
 
-.button-white {
-  width: 99px;
-  height: 44px;
-  background: #fff;
-  border: 2px solid rgb(190, 162, 250);
-  border-radius: 22px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #bc9cff;
-}
+
 
 .container {
   width: 100%;
@@ -98,9 +90,11 @@ section,
   position: relative;
   margin: 0 auto;
   max-width: $desktopWidth;
+  
 }
 @media screen and (max-height: 700px) {
-  .content-form {
+  .content-form{
+    
   }
 }
 // Modules
